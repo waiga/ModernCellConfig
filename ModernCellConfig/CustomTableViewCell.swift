@@ -14,14 +14,25 @@ class CustomTableViewCell: UITableViewCell {
     override func updateConfiguration(using state: UICellConfigurationState) {
         super.updateConfiguration(using: state)
         
-        var configuration = backgroundConfiguration?.updated(for: state)
-        configuration?.backgroundColor = .systemMint
+        var configuration = defaultContentConfiguration().updated(for: state)
+//        configuration?.backgroundColor = .systemMint
+        configuration.text = "Hello world"
+        configuration.image = UIImage(systemName: "circle")
+        
+        var backgroundConfig = backgroundConfiguration?.updated(for: state)
+        backgroundConfig?.backgroundColor = .orange
+        
         
         if state.isHighlighted || state.isSelected {
-            configuration?.backgroundColor = .orange
+            backgroundConfig?.backgroundColor = .yellow
+            configuration.textProperties.color = .red
+            configuration.imageProperties.tintColor = .blue
         }
         
-        backgroundConfiguration = configuration
+        contentConfiguration = configuration
+        backgroundConfiguration = backgroundConfig
+        
+        
     }
 
     override func awakeFromNib() {
