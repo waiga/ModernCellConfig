@@ -13,6 +13,8 @@
 		5F41CDD127CF71BF004CD31D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F41CDCF27CF71BF004CD31D /* Main.storyboard */; };
 		5F41CDD327CF71C0004CD31D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F41CDD227CF71C0004CD31D /* Assets.xcassets */; };
 		5F41CDD627CF71C0004CD31D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F41CDD427CF71C0004CD31D /* LaunchScreen.storyboard */; };
+		5F41CDDE27CF748C004CD31D /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CDDD27CF748C004CD31D /* CustomTableViewController.swift */; };
+		5F41CDE027CF74AA004CD31D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41CDDF27CF74AA004CD31D /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F41CDD227CF71C0004CD31D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F41CDD527CF71C0004CD31D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F41CDD727CF71C0004CD31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F41CDDD27CF748C004CD31D /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		5F41CDDF27CF74AA004CD31D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				5F41CDC927CF71BF004CD31D /* AppDelegate.swift */,
 				5F41CDCB27CF71BF004CD31D /* SceneDelegate.swift */,
+				5F41CDDF27CF74AA004CD31D /* CustomTableViewCell.swift */,
 				5F41CDCD27CF71BF004CD31D /* ViewController.swift */,
 				5F41CDCF27CF71BF004CD31D /* Main.storyboard */,
 				5F41CDD227CF71C0004CD31D /* Assets.xcassets */,
 				5F41CDD427CF71C0004CD31D /* LaunchScreen.storyboard */,
 				5F41CDD727CF71C0004CD31D /* Info.plist */,
+				5F41CDDD27CF748C004CD31D /* CustomTableViewController.swift */,
 			);
 			path = ModernCellConfig;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F41CDDE27CF748C004CD31D /* CustomTableViewController.swift in Sources */,
+				5F41CDE027CF74AA004CD31D /* CustomTableViewCell.swift in Sources */,
 				5F41CDCE27CF71BF004CD31D /* ViewController.swift in Sources */,
 				5F41CDCA27CF71BF004CD31D /* AppDelegate.swift in Sources */,
 				5F41CDCC27CF71BF004CD31D /* SceneDelegate.swift in Sources */,
